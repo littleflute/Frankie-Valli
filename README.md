@@ -1,3 +1,57 @@
+[v0.0.4](https://github.com/littleflute/Frankie-Valli/edit/master/README.md)
+
+[show this page](https://littleflute.github.io/Feist/)
+
+[Let it die](Let it die)
+ 
+
+<audio controls id="player"> 
+  <source src="https://littleflute.github.io/Frankie-Valli/Frankie Valli/cd/01 曲目 1 未知艺术家 未知唱片集 (2015-11-22 07-31-49) 未知 192kbps.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div id="xd"> 
+</div>
+<script>
+var d = document.getElementById("xd"); 
+var html = d.innerHTML; 
+
+html += fNewBtn(1);
+html += fNewBtn(2);
+html += fNewBtn(3);
+html += fNewBtn(4);
+html += fNewBtn(5);
+html += fNewBtn(6);
+html += fNewBtn(7);
+ 
+d.innerHTML = html;
+
+var p = document.getElementById("player");
+function f(i)
+{
+    var s = "https://littleflute.github.io/Frankie-Valli/Frankie Valli/cd/0";
+    s += i;
+    s += " 曲目 ";
+    s += i;
+    s += " 未知艺术家 未知唱片集 (2015-11-22 07-31-49) 未知 192kbps.mp3";
+    
+	p.src = s; 
+    p.play();
+}
+function fNewBtn(i)
+{
+	var rHTML = "";
+    rHTML = "<button onclick='f(";
+    rHTML += i;
+    rHTML += ");'>";
+    rHTML += i;
+    rHTML += "</button>";
+    return rHTML;
+}
+</script>
+
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/littleflute/Frankie-Valli/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
